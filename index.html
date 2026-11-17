@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MR Canchas | Mantenimiento de Superficies Deportivas en Barrios Cerrados</title>
+  <meta
+    name="description"
+    content="Servicio profesional de mantenimiento diario y preventivo de canchas de tenis de polvo de ladrillo, pádel y fútbol sintético para barrios cerrados y countries. Dirección técnica: Tomás Domínguez."
+  />
+  <meta name="theme-color" content="#1E6B3F" />
+
+  <!-- Google Fonts: Montserrat (Institutional Headings) & Plus Jakarta Sans (Clean Mobile Readability) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CSS CDN with Custom Brand Configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ladrillo: {
+              DEFAULT: '#C1923A',
+              terracota: '#B8532E',
+              oscuro: '#A34220',
+              suave: '#FBF5EE',
+            },
+            cesped: {
+              DEFAULT: '#1E6B3F',
+              oscuro: '#154D2D',
+              claro: '#EBF5EF',
+            },
+            grafito: {
+              DEFAULT: '#333333',
+              oscuro: '#222222',
+              medio: '#555555',
+            },
+            piedra: '#F7F6F2',
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'system-ui', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            card: '0 10px 30px -10px rgba(51, 51, 51, 0.10)',
+            elevated: '0 20px 45px -15px rgba(30, 107, 63, 0.18)',
+            cta: '0 12px 28px -6px rgba(37, 211, 102, 0.45)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    :root {
+      --color-ladrillo: #C1923A;
+      --color-terracota: #B8532E;
+      --color-terracota-dark: #A34220;
+      --color-cesped: #1E6B3F;
+      --color-cesped-dark: #154D2D;
+      --color-grafito: #333333;
+      --color-blanco: #FFFFFF;
+      --color-piedra: #F7F6F2;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      color: var(--color-grafito);
+      background-color: var(--color-blanco);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Montserrat', system-ui, sans-serif;
+    }
+
+    /* Subtle architectural clay-and-turf accent line */
+    .court-divider {
+      background: linear-gradient(90deg, #B8532E 0%, #C1923A 50%, #1E6B3F 100%);
+    }
+
+    /* Subtle pulse ring for the floating WhatsApp CTA */
+    @keyframes whatsappPulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55);
+      }
+      70% {
+        box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+
+    .wa-pulse {
+      animation: whatsappPulse 2.4s infinite;
+    }
+
+    /* Gallery item smooth filter transition */
+    .gallery-card {
+      transition: transform 0.28s ease, box-shadow 0.28s ease, opacity 0.25s ease;
+    }
+    .gallery-card.hidden-item {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-white text-grafito selection:bg-cesped selection:text-white">
+
+  <!-- =====================================================================
+       TOP INSTITUTIONAL BAR (Visibility for Country Administrators)
+  ====================================================================== -->
+  <div class="bg-grafito text-white text-xs sm:text-sm py-2 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 text-center sm:text-left">
+      <p class="text-white/90 font-medium tracking-wide">
+        Servicio Exclusivo para Barrios Cerrados y Countries
+        <span class="hidden md:inline text-ladrillo mx-2">•</span>
+        <span class="block sm:inline text-white/75">Dirección Técnica: <strong class="text-white font-semibold">Tomás Domínguez</strong></span>
+      </p>
+      <a
+        href="https://wa.me/5491171148366?text=Hola%20Tom%C3%A1s%2C%20vi%20la%20web%20de%20MR%20Canchas%20y%20me%20gustar%C3%ADa%20coordinar%20una%20cotizaci%C3%B3n%20para%20nuestro%20barrio."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1.5 text-ladrillo hover:text-white font-semibold transition-colors"
+      >
+        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.25.7-1.44 1.34-1.99 1.42-.51.07-1.15.1-1.85-.12-.43-.14-.98-.32-1.69-.63-2.98-1.29-4.92-4.3-5.07-4.5-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2.18 1.04-2.48.27-.3.59-.38.79-.38.2 0 .4.01.57.01.18.01.43-.07.67.51.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.17-.31.38-.45.51-.15.15-.3.31-.13.61.17.3.77 1.27 1.65 2.06 1.14 1.02 2.1 1.33 2.4 1.48.3.15.48.12.66-.07.18-.2.75-.88.95-1.18.2-.3.4-.25.67-.15.27.1 1.74.82 2.04.97.3.15.5.22.57.35.07.13.07.73-.18 1.43z"/>
+        </svg>
+        <span>+54 9 11 7114-8366</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       STICKY HEADER & MOBILE-FIRST NAVIGATION
+  ====================================================================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200/80 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <!-- Brand Logo -->
+        <a href="#inicio" class="flex items-center gap-3 group focus:outline-none">
+          <!-- Custom Institutional SVG Emblem (Court Perimeter + Clay & Turf Identity) -->
+          <svg
+            class="w-11 h-11 sm:w-12 sm:h-12 shrink-0 transition-transform duration-200 group-hover:scale-105"
+            viewBox="0 0 64 64"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="Logotipo MR Canchas"
+          >
+            <rect x="2" y="2" width="60" height="60" rx="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2" />
+            <!-- Left Half: Clay Brick / Terracotta -->
+            <path d="M10 14C10 11.7909 11.7909 10 14 10H32V54H14C11.7909 54 10 52.2091 10 50V14Z" fill="#B8532E" />
+            <!-- Right Half: Dark Turf Green -->
+            <path d="M32 10H50C52.2091 10 54 11.7909 54 14V50C54 52.2091 52.2091 54 50 54H32V10Z" fill="#1E6B3F" />
+            <!-- Gold/Terracotta Inner Court Lines -->
+            <rect x="15" y="15" width="34" height="34" rx="2" stroke="#FFFFFF" stroke-width="2" />
+            <line x1="32" y1="12" x2="32" y2="52" stroke="#C1923A" stroke-width="2.5" />
+            <line x1="15" y1="32" x2="49" y2="32" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.9" />
+            <rect x="22" y="21" width="20" height="22" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.85" />
+          </svg>
+
+          <div class="leading-tight">
+            <span class="block font-heading font-extrabold text-lg sm:text-xl tracking-tight text-grafito">
+              MR <span class="text-cesped">Canchas</span>
+            </span>
+            <span class="block text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-ladrillo-terracota">
+              Mantenimiento de Superficies Deportivas
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-grafito">
+          <a href="#trayectoria" class="hover:text-cesped transition-colors">Trayectoria</a>
+          <a href="#galeria" class="hover:text-cesped transition-colors">Trabajos Reales</a>
+          <a href="#servicios" class="hover:text-cesped transition-colors">Servicios</a>
+          <a href="#garantia" class="hover:text-cesped transition-colors">Profesionalismo</a>
+        </nav>
+
+        <!-- Header Right Action + Mobile Menu Toggle -->
+        <div class="flex items-center gap-2.5">
+          <a
+            href="https://wa.me/5491171148366?text=Hola%20Tom%C3%A1s%2C%20vi%20la%20web%20de%20MR%20Canchas%20y%20me%20gustar%C3%ADa%20coordinar%20una%20cotizaci%C3%B3n%20para%20nuestro%20barrio."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden sm:inline-flex items-center gap-2 bg-cesped hover:bg-cesped-oscuro text-white font-semibold text-sm px-4 py-2.5 rounded-lg shadow-sm transition-all"
+          >
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.25.7-1.44 1.34-1.99 1.42-.51.07-1.15.1-1.85-.12-.43-.14-.98-.32-1.69-.63-2.98-1.29-4.92-4.3-5.07-4.5-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2.18 1.04-2.48.27-.3.59-.38.79-.38.2 0 .4.01.57.01.18.01.43-.07.67.51.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.17-.31.38-.45.51-.15.15-.3.31-.13.61.17.3.77 1.27 1.65 2.06 1.14 1.02 2.1 1.33 2.4 1.48.3.15.48.12.66-.07.18-.2.75-.88.95-1.18.2-.3.4-.25.67-.15.27.1 1.74.82 2.04.97.3.15.5.22.57.35.07.13.07.73-.18 1.43z"/>
+            </svg>
+            <span>Cotizar por WhatsApp</span>
+          </a>
+
+          <!-- Mobile Hamburger Button -->
+          <button
+            id="mobile-menu-btn"
+            type="button"
+            aria-label="Abrir menú de navegación"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            class="lg:hidden inline-flex items-center justify-center p-2.5 rounded-lg text-grafito hover:bg-piedra border border-gray-200 focus:outline-none focus:ring-2 focus:ring-cesped"
+          >
+            <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="icon-close" class="hidden w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Slide-Down Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-lg">
+      <nav class="px-4 py-4 space-y-2">
+        <a href="#trayectoria" class="mobile-nav-link block px-3 py-2.5 rounded-lg font-semibold text-grafito hover:bg-piedra hover:text-cesped">
+          Trayectoria y Confianza
+        </a>
+        <a href="#galeria" class="mobile-nav-link block px-3 py-2.5 rounded-lg font-semibold text-grafito hover:bg-piedra hover:text-cesped">
+          Fotos Reales de Canchas
+        </a>
+        <a href="#servicios" class="mobile-nav-link block px-3 py-2.5 rounded-lg font-semibold text-grafito hover:bg-piedra hover:text-cesped">
+          Servicios (Tenis, Pádel y Fútbol)
+        </a>
+        <a href="#garantia" class="mobile-nav-link block px-3 py-2.5 rounded-lg font-semibold text-grafito hover:bg-piedra hover:text-cesped">
+          Profesionalismo y Garantía
+        </a>
+        <div class="pt-2">
+          <a
+            href="https://wa.me/5491171148366?text=Hola%20Tom%C3%A1s%2C%20vi%20la%20web%20de%20MR%20Canchas%20y%20me%20gustar%C3%ADa%20coordinar%20una%20cotizaci%C3%B3n%20para%20nuestro%20barrio."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full inline-flex items-center justify-center gap-2 bg-cesped hover:bg-cesped-oscuro text-white font-bold px-4 py-3 rounded-xl shadow-sm"
+          >
+            <span>Solicitar Presupuesto por WhatsApp</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- ===================================================================
+         HERO SECTION (CABECERA MOBILE-FIRST DE ALTA CONVERSIÓN)
+    ==================================================================== -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-piedra via-white to-white pt-8 pb-14 sm:pt-14 sm:pb-20">
+      <!-- Subtle top decorative court-line strip -->
+      <div class="absolute top-0 inset-x-0 h-1 court-divider"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+          <!-- Left Column: Institutional Value Proposition & Primary WhatsApp CTA -->
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-ladrillo-suave border border-ladrillo/30 text-ladrillo-oscuro text-xs sm:text-sm font-bold tracking-wide">
+              <span class="w-2 h-2 rounded-full bg-ladrillo-terracota"></span>
+              Especialistas en Barrios Cerrados y Clubes de Campo
+            </div>
+
+            <h1 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.15] text-grafito tracking-tight">
+              Mantenimiento Profesional de Canchas de Tenis, Pádel y Fútbol en Barrios Cerrados
+            </h1>
+
+            <p class="text-base sm:text-lg text-grafito-medio leading-relaxed max-w-2xl">
+              Asegurá el estado óptimo de tus superficies deportivas los 365 días del año. Experiencia comprobada y compromiso profesional.
+            </p>
+
+            <!-- Mobile-First High-Conversion CTA Stack -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-1">
+              <a
+                href="https://wa.me/5491171148366?text=Hola%20Tom%C3%A1s%2C%20vi%20la%20web%20de%20MR%20Canchas%20y%20me%20gustar%C3%ADa%20coordinar%20una%20cotizaci%C3%B3n%20para%20nuestro%20barrio."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-3 bg-cesped hover:bg-cesped-oscuro active:scale-[0.99] text-white font-heading font-bold text-base sm:text-lg px-7 py-4 rounded-xl shadow-elevated transition-all"
+              >
+                <svg class="w-6 h-6 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.25.7-1.44 1.34-1.99 1.42-.51.07-1.15.1-1.85-.12-.43-.14-.98-.32-1.69-.63-2.98-1.29-4.92-4.3-5.07-4.5-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2.18 1.04-2.48.27-.3.59-.38.79-.38.2 0 .4.01.57.01.18.01.43-.07.67.51.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.17-.31.38-.45.51-.15.15-.3.31-.13.61.17.3.77 1.27 1.65 2.06 1.14 1.02 2.1 1.33 2.4 1.48.3.15.48.12.66-.07.18-.2.75-.88.95-1.18.2-.3.4-.25.67-.15.27.1 1.74.82 2.04.97.3.15.5.22.57.35.07.13.07.73-.18 1.43z"/>
+                </svg>
+                <span>Solicitar Presupuesto por WhatsApp</span>
+              </a>
+
+              <a
+                href="#servicios"
+                class="inline-flex items-center justify-center gap-2 bg-white hover:bg-piedra text-grafito font-semibold text-sm sm:text-base px-6 py-4 rounded-xl border border-gray-300 transition-colors"
+              >
+                <span>Ver Plan de Mantenimiento</span>
+                <svg class="w-4 h-4 text-ladrillo-terracota" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Quick Trust Strip for Administrators -->
+            <div class="grid grid-cols-3 gap-3 pt-3 border-t border-gray-200/80">
+              <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm">
+                <p class="font-heading font-extrabold text-base sm:text-lg text-ladrillo-terracota">08:00 AM</p>
+                <p class="text-xs text-grafito-medio font-medium leading-snug">Rodillo y compactación matutina</p>
+              </div>
+              <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm">
+                <p class="font-heading font-extrabold text-base sm:text-lg text-cesped">365 Días</p>
+                <p class="text-xs text-grafito-medio font-medium leading-snug">Cobertura continua todo el año</p>
+              </div>
+              <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm">
+                <p class="font-heading font-extrabold text-sm sm:text-base text-grafito">Santa Lucía</p>
+                <p class="text-xs text-grafito-medio font-medium leading-snug">Trayectoria comprobada</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Hero Court Image Card + Floating Operational Badges -->
+          <div class="lg:col-span-6">
+            <div class="relative rounded-2xl overflow-hidden shadow-elevated border border-gray-200 bg-grafito">
+              <div class="aspect-[4/3] sm:aspect-[16/11] w-full overflow-hidden">
+                <img
+                  src="assets/hero-cancha-tenis.png"
+                  alt="Cancha de tenis de polvo de ladrillo recién compactada con rodillo a las 8 AM en barrio cerrado"
+                  class="w-full h-full object-cover object-center"
+                />
+              </div>
+
+              <!-- Gradient Scrim for High Readability -->
+              <div class="absolute inset-0 bg-gradient-to-t from-grafito/90 via-grafito/20 to-transparent pointer-events-none"></div>
+
+              <!-- Top Floating Badge -->
+              <div class="absolute top-3.5 left-3.5 sm:top-5 sm:left-5 bg-white/95 backdrop-blur-sm px-3.5 py-2 rounded-xl shadow-md border border-white/60 flex items-center gap-2.5">
+                <span class="flex h-2.5 w-2.5 relative">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cesped opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-cesped"></span>
+                </span>
+                <span class="text-xs sm:text-sm font-bold text-grafito">
+                  Listas para el primer turno • 8:00 AM
+                </span>
+              </div>
+
+              <!-- Bottom Overlay Caption -->
+              <div class="absolute bottom-0 inset-x-0 p-4 sm:p-6 text-white">
+                <div class="flex flex-wrap items-end justify-between gap-3">
+                  <div>
+                    <p class="text-xs uppercase tracking-widest font-bold text-ladrillo mb-1">
+                      Tenis • Pádel • Fútbol Sintético
+                    </p>
+                    <p class="font-heading font-bold text-base sm:text-lg leading-snug">
+                      Superficies firmes, parejas y seguras para los socios del barrio
+                    </p>
+                  </div>
+                  <div class="bg-cesped/95 border border-white/20 px-3 py-1.5 rounded-lg text-xs font-semibold">
+                    Tomás Domínguez • Respuesta Directa
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECCIÓN DE CONFIANZA Y TRAYECTORIA (PRUEBA SOCIAL)
+    ==================================================================== -->
+    <section id="trayectoria" class="py-12 sm:py-16 bg-white border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Institutional Proof Card: Barrio Santa Lucía -->
+        <div class="rounded-2xl bg-grafito text-white p-6 sm:p-10 shadow-elevated relative overflow-hidden">
+          <!-- Decorative Clay & Turf Accent Bar -->
+          <div class="absolute top-0 left-0 right-0 h-1.5 court-divider"></div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-4">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-ladrillo text-xs font-bold uppercase tracking-wider">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Experiencia Comprobada en Barrios Cerrados
+              </div>
+
+              <h2 class="font-heading font-extrabold text-2xl sm:text-3xl leading-tight">
+                Respaldo diario en complejos deportivos como <span class="text-ladrillo">Barrio Santa Lucía</span>
+              </h2>
+
+              <p class="text-white/85 text-sm sm:text-base leading-relaxed">
+                Sabemos exactamente lo que exigen las administraciones, intendencias y comisiones deportivas: canchas impecables desde primera hora, cero reclamos de vecinos, cuidado real de la inversión en infraestructura y cumplimiento operativo estricto dentro del barrio.
+              </p>
+
+              <div class="flex flex-wrap gap-3 pt-1">
+                <span class="inline-flex items-center gap-2 bg-white/10 px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium">
+                  <span class="w-2 h-2 rounded-full bg-ladrillo"></span>
+                  Prolongamos la vida útil de cada superficie
+                </span>
+                <span class="inline-flex items-center gap-2 bg-white/10 px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium">
+                  <span class="w-2 h-2 rounded-full bg-cesped"></span>
+                  Prevención de lesiones y pique parejo
+                </span>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+              <div class="bg-white/5 border border-white/15 rounded-xl p-4 sm:p-5">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs font-bold uppercase tracking-wider text-ladrillo">Caso Destacado</span>
+                  <span class="text-xs font-semibold px-2 py-0.5 rounded bg-cesped text-white">Activo</span>
+                </div>
+                <p class="font-heading font-bold text-lg text-white">Barrio Santa Lucía</p>
+                <p class="text-xs sm:text-sm text-white/75 mt-1">
+                  Mantenimiento integral programado con estándar de club: polvo de ladrillo diario desde las 8 AM y acondicionamiento continuo de superficies.
+                </p>
+              </div>
+
+              <a
+                href="https://wa.me/5491171148366?text=Hola%20Tom%C3%A1s%2C%20vi%20la%20web%20de%20MR%20Canchas%20y%20me%20gustar%C3%ADa%20coordinar%20una%20cotizaci%C3%B3n%20para%20nuestro%20barrio."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center justify-between bg-ladrillo-terracota hover:bg-ladrillo-oscuro text-white rounded-xl p-4 sm:p-5 transition-colors group"
+              >
+                <div>
+                  <p class="font-heading font-bold text-sm sm:text-base">¿Querés referencias para tu comisión?</p>
+                  <p class="text-xs text-white/90 mt-0.5">Coordiná una visita técnica sin cargo con Tomás</p>
+                </div>
+                <svg class="w-6 h-6 shrink-0 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         GALERÍA DE FOTOS REALES Y ESTADO DE CANCHAS (#galeria)
+    ==================================================================== -->
+    <section id="galeria" class="py-12 sm:py-16 bg-piedra border-y border-gray-200/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Header + Interactive Filter Pills -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8 sm:mb-10">
+          <div class="max-w-2xl">
+            <span class="inline-block text-xs font-bold uppercase tracking-widest text-ladrillo-terracota mb-2">
+              Resultados Visibles en Campo
+            </span>
+            <h2 class="font-heading font-extrabold text-2xl sm:text-3xl text-grafito">
+              Canchas impecables listas para jugar todo el año
+            </h2>
+            <p class="text-sm sm:text-base text-grafito-medio mt-2">
+              Cada superficie recibe el tratamiento específico que requiere su material: compactación con rodillo, limpieza de flejes, nivelación de arena de sílice y caucho molido.
+            </p>
+          </div>
+
+          <!-- Filter Buttons (Mobile horizontal scroll friendly) -->
+          <div class="flex flex-wrap gap-2" role="tablist" aria-label="Filtrar galería por tipo de superficie">
+            <button
+              type="button"
+              data-filter="all"
+              class="filter-btn active px-3.5 py-2 rounded-lg text-xs sm:text-sm font-bold bg-grafito text-white transition-all"
+            >
+              Todas
+            </button>
+            <button
+              type="button"
+              data-filter="tenis"
+              class="filter-btn px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold bg-white text-grafito border border-gray-200 hover:border-ladrillo-terracota transition-all"
+            >
+              Tenis - Polvo de Ladrillo
+            </button>
+            <button
+              type="button"
+              data-filter="padel"
+              class="filter-btn px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold bg-white text-grafito border border-gray-200 hover:border-cesped transition-all"
+            >
+              Pádel
+            </button>
+            <button
+              type="button"
+              data-filter="futbol"
+              class="filter-btn px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold bg-white text-grafito border border-gray-200 hover:border-cesped transition-all"
+            >
+              Fútbol Sintético
+            </button>
+          </div>
+        </div>
+
+        <!-- Gallery Grid (Reemplazá cualquier imagen simplemente actualizando el archivo en /assets/) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- Photo 1: Tenis Polvo de Ladrillo (Rodillo 8 AM) -->
+          <article data-category="tenis" class="gallery-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-card flex flex-col">
+            <div class="relative aspect-[4/3] overflow-hidden bg-ladrillo-suave">
+              <img
+                src="assets/hero-cancha-tenis.png"
+                alt="Cancha de tenis de polvo de ladrillo compactada con rodillo y flejes limpios"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+              <span class="absolute top-3 left-3 bg-ladrillo-terracota text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow">
+                Tenis • 8:00 AM
+              </span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-heading font-bold text-base text-grafito">Compactación con Rodillo y Flejes</h3>
+                <p class="text-xs sm:text-sm text-grafito-medio mt-1.5 leading-relaxed">
+                  Pasada de rodillo matutina, aporte de polvo de ladrillo en zonas de desgaste y limpieza integral de flejes.
+                </p>
+              </div>
+              <span class="mt-3 text-xs font-semibold text-ladrillo-terracota">Mantenimiento diario</span>
+            </div>
+          </article>
+
+          <!-- Photo 2: Pádel - Arena de Sílice -->
+          <article data-category="padel" class="gallery-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-card flex flex-col">
+            <div class="relative aspect-[4/3] overflow-hidden bg-cesped-claro">
+              <img
+                src="assets/cancha-padel.png"
+                alt="Cancha de pádel con césped sintético verde y arena de sílice nivelada"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+              <span class="absolute top-3 left-3 bg-cesped text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow">
+                Pádel • Jueves
+              </span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-heading font-bold text-base text-grafito">Arena de Sílice Nivelada</h3>
+                <p class="text-xs sm:text-sm text-grafito-medio mt-1.5 leading-relaxed">
+                  Acondicionamiento periódico cada jueves para garantizar agarre seguro y bote uniforme durante el fin de semana.
+                </p>
+              </div>
+              <span class="mt-3 text-xs font-semibold text-cesped">A punto para el fin de semana</span>
+            </div>
+          </article>
+
+          <!-- Photo 4: Fútbol Sintético - Arena y Caucho -->
+          <article data-category="futbol" class="gallery-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-card flex flex-col">
+            <div class="relative aspect-[4/3] overflow-hidden bg-cesped-claro">
+              <img
+                src="assets/cancha-futbol.png"
+                alt="Cancha de fútbol de césped sintético peinada con arena de sílice y caucho molido"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+              <span class="absolute top-3 left-3 bg-grafito text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow">
+                Fútbol • Mensual
+              </span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-heading font-bold text-base text-grafito">Sílice y Caucho Molido</h3>
+                <p class="text-xs sm:text-sm text-grafito-medio mt-1.5 leading-relaxed">
+                  Distribución mensual pareja y cepillado técnico para proteger la fibra sintética y amortiguar el impacto.
+                </p>
+              </div>
+              <span class="mt-3 text-xs font-semibold text-cesped">Mayor durabilidad de carpeta</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Clean Admin Note for Real Neighborhood Photos -->
+        <p class="mt-6 text-center text-xs text-grafito-medio">
+          ¿Querés ver fotos y videos actuales de nuestros trabajos en barrios cerrados?
+          <a
+            href="https://wa.me/5491171148366?text=Hola%20Tom%C3%A1s%2C%20vi%20la%20web%20de%20MR%20Canchas%20y%20me%20gustar%C3%ADa%20coordinar%20una%20cotizaci%C3%B3n%20para%20nuestro%20barrio."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-bold text-cesped underline underline-offset-2 hover:text-cesped-oscuro"
+          >
+            Pedíselos directo a Tomás por WhatsApp
+          </a>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         DETALLE DE SERVICIOS (TARJETAS LIMPIAS Y ORGANIZADAS)
+    ==================================================================== -->
+    <section id="servicios" class="py-14 sm:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+          <span class="inline-block text-xs font-bold uppercase tracking-widest text-cesped mb-2">
+            Planes Operativos por Superficie
+          </span>
+          <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-grafito">
+            Detalle de Servicios de Mantenimiento
+          </h2>
+          <p class="text-sm sm:text-base text-grafito-medio mt-3 leading-relaxed">
+            Cronogramas claros, ejecutados con puntualidad y métodos específicos para mantener cada cancha en condiciones reglamentarias.
+          </p>
+        </div>
+
+        <!-- 3-Column Responsive Service Cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-7 items-stretch">
+
+          <!-- CARD 1: TENIS (Polvo de ladrillo - Diario) -->
+          <article class="bg-white rounded-2xl border-2 border-ladrillo-terracota/25 shadow-card hover:shadow-elevated transition-shadow flex flex-col overflow-hidden">
+            <!-- Top Color Accent -->
+            <div class="h-2 bg-gradient-to-r from-ladrillo-terracota to-ladrillo"></div>
+
+            <div class="p-6 sm:p-8 flex-1 flex flex-col">
+              <div class="flex items-start justify-between gap-3 mb-4">
+                <div>
+                  <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-ladrillo-suave text-ladrillo-oscuro border border-ladrillo/30">
+                    Frecuencia Diaria • Inicio 8:00 AM
+                  </span>
+                  <h3 class="font-heading font-extrabold text-xl sm:text-2xl text-grafito mt-3">
+                    Tenis
+                  </h3>
+                  <p class="text-sm font-semibold text-ladrillo-terracota">
+                    Polvo de ladrillo • Cuidado integral diario
+                  </p>
+                </div>
+                <!-- Clay Court Icon -->
+                <div class="w-12 h-12 rounded-xl bg-ladrillo-suave text-ladrillo-terracota flex items-center justify-center shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="9" />
+                    <path stroke-linecap="round" d="M5.6 5.6c3.2 2.8 3.2 10 0 12.8M18.4 5.6c-3.2 2.8-3.2 10 0 12.8" />
+                  </svg>
+                </div>
+              </div>
+
+              <ul class="space-y-4 text-sm text-grafito-medio flex-1 my-4">
+                <li class="flex items-start gap-3">
+                  <span class="mt-0.5 w-5 h-5 rounded-full bg-ladrillo-suave text-ladrillo-terracota flex items-center justify-center shrink-0">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong class="text-grafito block">Rodillo a las 8:00 AM</strong>
+                    Compactación y nivelación temprana para que la cancha esté firme desde el primer turno de la mañana.
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-0.5 w-5 h-5 rounded-full bg-ladrillo-suave text-ladrillo-terracota flex items-center justify-center shrink-0">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong class="text-grafito block">Aporte de polvo de ladrillo</strong>
+                    Reposición estratégica en líneas de base y sectores de mayor desgaste para evitar pozos y desniveles.
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-0.5 w-5 h-5 rounded-full bg-ladrillo-suave text-ladrillo-terracota flex items-center justify-center shrink-0">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong class="text-grafito block">Limpieza de flejes</strong>
+                    Cepillado y perfilado diario de todas las líneas para visibilidad impecable y pique reglamentario.
+                  </div>
+                </li>
+              </ul>
+
+              <div class="pt-4 border-t border-gray-100">
+                <a
+                  href="https://wa.me/5491171148366?text=Hola%20Tom%C3%A1s%2C%20vi%20la%20web%20de%20MR%20Canchas%20y%20me%20gustar%C3%ADa%20coordinar%20una%20cotizaci%C3%B3n%20para%20nuestro%20barrio."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full inline-flex items-center justify-center gap-2 bg-ladrillo-terracota hover:bg-ladrillo-oscuro text-white font-bold text-sm px-5 py-3.5 rounded-xl transition-colors"
+                >
+                  <span>Cotizar Mantenimiento de Tenis</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2: PÁDEL (Acondicionamiento Jueves) -->
+          <article class="bg-white rounded-2xl border-2 border-cesped/25 shadow-card hover:shadow-elevated transition-shadow flex flex-col overflow-hidden">
+            <!-- Top Color Accent -->
+            <div class="h-2 bg-cesped"></div>
+
+            <div class="p-6 sm:p-8 flex-1 flex flex-col">
+              <div class="flex items-start justify-between gap-3 mb-4">
+                <div>
+                  <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-cesped-claro text-cesped border border-cesped/20">
+                    Frecuencia Periódica • Jueves
+                  </span>
+                  <h3 class="font-heading font-extrabold text-xl sm:text-2xl text-grafito mt-3">
+                    Pádel
+                  </h3>
+                  <p class="text-sm font-semibold text-cesped">
+                    Césped sintético • Puesta a punto semanal
+                  </p>
+                </div>
+                <!-- Padel Court Icon -->
+                <div class="w-12 h-12 rounded-xl bg-cesped-claro text-cesped flex items-center justify-center shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <rect x="4" y="3" width="16" height="18" rx="2" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="12" y1="3" x2="12" y2="21" />
+                  </svg>
+                </div>
+              </div>
+
+              <ul class="space-y-4 text-sm text-grafito-medio flex-1 my-4">
+                <li class="flex items-start gap-3">
+                  <span class="mt-0.5 w-5 h-5 rounded-full bg-cesped-claro text-cesped flex items-center justify-center shrink-0">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong class="text-grafito block">Acondicionamiento de arena de sílice (Jueves)</strong>
+                    Trabajo programado estratégicamente los días jueves para dejar la cancha en estado óptimo para el uso intenso del fin de semana.
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-0.5 w-5 h-5 rounded-full bg-cesped-claro text-cesped flex items-center justify-center shrink-0">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong class="text-grafito block">Descompactación y redistribución pareja</strong>
+                    Cepillado técnico que corrige sectores resbaladizos por exceso de arena o desgaste prematuro de fibras en zonas de saque y red.
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-0.5 w-5 h-5 rounded-full bg-cesped-claro text-cesped flex items-center justify-center shrink-0">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong class="text-grafito block">Control preventivo de superficie</strong>
+                    Limpieza de perímetros junto a los vidrios, revisión de uniones y nivelación general de tracción y pique.
+                  </div>
+                </li>
+              </ul>
+
+              <div class="pt-4 border-t border-gray-100">
+                <a
+                  href="https://wa.me/5491171148366?text=Hola%20Tom%C3%A1s%2C%20vi%20la%20web%20de%20MR%20Canchas%20y%20me%20gustar%C3%ADa%20coordinar%20una%20cotizaci%C3%B3n%20para%20nuestro%20barrio."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full inline-flex items-center justify-center gap-2 bg-cesped hover:bg-cesped-oscuro text-white font-bold text-sm px-5 py-3.5 rounded-xl transition-colors"
+                >
+                  <span>Cotizar Mantenimiento de Pádel</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3: FÚTBOL (Distribución Mensual) -->
+          <article class="bg-white rounded-2xl border-2 border-grafito/20 shadow-card hover:shadow-elevated transition-shadow flex flex-col overflow-hidden">
+            <!-- Top Color Accent -->
+            <div class="h-2 bg-gradient-to-r from-grafito to-cesped"></div>
+
+            <div class="p-6 sm:p-8 flex-1 flex flex-col">
+              <div class="flex items-start justify-between gap-3 mb-4">
+                <div>
+                  <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-piedra text-grafito border border-gray-300">
+                    Frecuencia Mensual • Alta Durabilidad
+                  </span>
+                  <h3 class="font-heading font-extrabold text-xl sm:text-2xl text-grafito mt-3">
+                    Fútbol
+                  </h3>
+                  <p class="text-sm font-semibold text-grafito-medio">
+                    Césped sintético • Carga y peinado técnico
+                  </p>
+                </div>
+                <!-- Football Turf Icon -->
+                <div class="w-12 h-12 rounded-xl bg-piedra text-grafito flex items-center justify-center shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <rect x="2" y="5" width="20" height="14" rx="2" />
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <circle cx="12" cy="12" r="2.5" />
+                  </svg>
+                </div>
+              </div>
+
+              <ul class="space-y-4 text-sm text-grafito-medio flex-1 my-4">
+                <li class="flex items-start gap-3">
+                  <span class="mt-0.5 w-5 h-5 rounded-full bg-piedra text-grafito flex items-center justify-center shrink-0">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong class="text-grafito block">Distribución mensual de arena de sílice y caucho molido</strong>
+                    Reposición y nivelación equilibrada de la carga para amortiguar el impacto en articulaciones y proteger la carpeta.
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-0.5 w-5 h-5 rounded-full bg-piedra text-grafito flex items-center justify-center shrink-0">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong class="text-grafito block">Cepillado profundo y peinado de fibras</strong>
+                    Levantamiento de fibras aplastadas por el uso frecuente, recuperando el rodamiento natural de la pelota.
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-0.5 w-5 h-5 rounded-full bg-piedra text-grafito flex items-center justify-center shrink-0">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <div>
+                    <strong class="text-grafito block">Inspección de zonas críticas</strong>
+                    Atención especial en áreas de arco, puntos de penal y uniones de líneas blancas demarcatorias.
+                  </div>
+                </li>
+              </ul>
+
+              <div class="pt-4 border-t border-gray-100">
+                <a
+                  href="https://wa.me/5491171148366?text=Hola%20Tom%C3%A1s%2C%20vi%20la%20web%20de%20MR%20Canchas%20y%20me%20gustar%C3%ADa%20coordinar%20una%20cotizaci%C3%B3n%20para%20nuestro%20barrio."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full inline-flex items-center justify-center gap-2 bg-grafito hover:bg-grafito-oscuro text-white font-bold text-sm px-5 py-3.5 rounded-xl transition-colors"
+                >
+                  <span>Cotizar Mantenimiento de Fútbol</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         BLOQUE DE PROFESIONALISMO Y GARANTÍA (PARA ADMINISTRADORES)
+    ==================================================================== -->
+    <section id="garantia" class="py-14 sm:py-20 bg-piedra border-t border-gray-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <!-- Left Explanation -->
+          <div class="lg:col-span-5 space-y-5">
+            <span class="inline-block text-xs font-bold uppercase tracking-widest text-ladrillo-terracota">
+              Garantía Institucional MR Canchas
+            </span>
+            <h2 class="font-heading font-extrabold text-2xl sm:text-3xl lg:text-4xl text-grafito leading-tight">
+              Tranquilidad administrativa y orden operativo dentro de tu barrio
+            </h2>
+            <p class="text-sm sm:text-base text-grafito-medio leading-relaxed">
+              Entendemos los requisitos legales, administrativos y de convivencia de un barrio cerrado. Trabajamos de forma formal, ordenada y previsible para que la administración delegue el área deportiva con total confianza.
+            </p>
+
+            <div class="pt-2">
+              <a
+                href="https://wa.me/5491171148366?text=Hola%20Tom%C3%A1s%2C%20vi%20la%20web%20de%20MR%20Canchas%20y%20me%20gustar%C3%ADa%20coordinar%20una%20cotizaci%C3%B3n%20para%20nuestro%20barrio."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2.5 bg-cesped hover:bg-cesped-oscuro text-white font-bold text-sm sm:text-base px-6 py-3.5 rounded-xl shadow-sm transition-colors"
+              >
+                <span>Solicitar Propuesta Formal</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right 4 Guarantee Pillars -->
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+            <!-- Pillar 1 -->
+            <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-card">
+              <div class="w-11 h-11 rounded-xl bg-cesped-claro text-cesped flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 class="font-heading font-bold text-lg text-grafito">Personal Capacitado</h3>
+              <p class="text-sm text-grafito-medio mt-2 leading-relaxed">
+                Operarios especializados en superficies deportivas, con protocolos de horario estrictos y trato respetuoso hacia propietarios e intendencia.
+              </p>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-card">
+              <div class="w-11 h-11 rounded-xl bg-ladrillo-suave text-ladrillo-terracota flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h3 class="font-heading font-bold text-lg text-grafito">Monotributo al Día</h3>
+              <p class="text-sm text-grafito-medio mt-2 leading-relaxed">
+                Situación fiscal y documentación en regla lista para facturación formal e ingreso de personal a barrios cerrados sin demoras.
+              </p>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-card">
+              <div class="w-11 h-11 rounded-xl bg-ladrillo-suave text-ladrillo flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                </svg>
+              </div>
+              <h3 class="font-heading font-bold text-lg text-grafito">Gestión Eficiente de Insumos</h3>
+              <p class="text-sm text-grafito-medio mt-2 leading-relaxed">
+                Dosificación técnica de polvo de ladrillo, arena de sílice y caucho molido para evitar desperdicios y cuidar el presupuesto del consorcio.
+              </p>
+            </div>
+
+            <!-- Pillar 4 -->
+            <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-card">
+              <div class="w-11 h-11 rounded-xl bg-cesped-claro text-cesped flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+              </div>
+              <h3 class="font-heading font-bold text-lg text-grafito">Trato Directo con Tomás Domínguez</h3>
+              <p class="text-sm text-grafito-medio mt-2 leading-relaxed">
+                Comunicación ágil y sin intermediarios para coordinar horarios especiales, torneos del barrio y reparaciones preventivas.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         BLOQUE DE CIERRE / CONVERSIÓN PARA ADMINISTRADORES Y COMISIONES
+    ==================================================================== -->
+    <section class="py-14 sm:py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl bg-gradient-to-br from-cesped via-cesped-oscuro to-grafito text-white p-8 sm:p-12 shadow-elevated text-center relative overflow-hidden">
+          <!-- Subtle Top Terracotta Bar -->
+          <div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-ladrillo-terracota via-ladrillo to-ladrillo-terracota"></div>
+
+          <span class="inline-block px-3.5 py-1 rounded-full bg-white/15 text-ladrillo text-xs font-bold uppercase tracking-widest mb-4">
+            Administraciones • Intendencias • Comisiones Deportivas
+          </span>
+
+          <h2 class="font-heading font-extrabold text-2xl sm:text-3xl lg:text-4xl leading-tight max-w-3xl mx-auto">
+            ¿Formás parte de la Administración o Comisión Directiva de un Barrio Cerrado?
+          </h2>
+
+          <p class="text-white/90 text-sm sm:text-lg max-w-2xl mx-auto mt-4 leading-relaxed">
+            Coordinemos una recorrida técnica por tus canchas de tenis, pádel o fútbol para presentarte un plan de mantenimiento a medida y un presupuesto claro.
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="https://wa.me/5491171148366?text=Hola%20Tom%C3%A1s%2C%20vi%20la%20web%20de%20MR%20Canchas%20y%20me%20gustar%C3%ADa%20coordinar%20una%20cotizaci%C3%B3n%20para%20nuestro%20barrio."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-white hover:bg-piedra text-cesped-oscuro font-heading font-extrabold text-base sm:text-lg px-8 py-4 rounded-xl shadow-lg transition-all active:scale-[0.99]"
+            >
+              <svg class="w-6 h-6 fill-current text-[#25D366] shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.25.7-1.44 1.34-1.99 1.42-.51.07-1.15.1-1.85-.12-.43-.14-.98-.32-1.69-.63-2.98-1.29-4.92-4.3-5.07-4.5-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2.18 1.04-2.48.27-.3.59-.38.79-.38.2 0 .4.01.57.01.18.01.43-.07.67.51.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.17-.31.38-.45.51-.15.15-.3.31-.13.61.17.3.77 1.27 1.65 2.06 1.14 1.02 2.1 1.33 2.4 1.48.3.15.48.12.66-.07.18-.2.75-.88.95-1.18.2-.3.4-.25.67-.15.27.1 1.74.82 2.04.97.3.15.5.22.57.35.07.13.07.73-.18 1.43z"/>
+              </svg>
+              <span>Coordinar Cotización por WhatsApp</span>
+            </a>
+          </div>
+
+          <p class="text-xs text-white/75 mt-4">
+            Atención directa de <strong class="text-white">Tomás Domínguez</strong> • WhatsApp <strong class="text-white">+54 9 11 7114-8366</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       INSTITUTIONAL FOOTER
+  ==================================================================== -->
+  <footer class="bg-grafito text-white pt-12 pb-24 sm:pb-14 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-white/10">
+
+        <!-- Brand Summary -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <svg class="w-10 h-10 shrink-0" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="2" width="60" height="60" rx="14" fill="#FFFFFF" />
+              <path d="M10 14C10 11.7909 11.7909 10 14 10H32V54H14C11.7909 54 10 52.2091 10 50V14Z" fill="#B8532E" />
+              <path d="M32 10H50C52.2091 10 54 11.7909 54 14V50C54 52.2091 52.2091 54 50 54H32V10Z" fill="#1E6B3F" />
+              <rect x="15" y="15" width="34" height="34" rx="2" stroke="#FFFFFF" stroke-width="2" />
+              <line x1="32" y1="12" x2="32" y2="52" stroke="#C1923A" stroke-width="2.5" />
+            </svg>
+            <div>
+              <p class="font-heading font-extrabold text-lg">MR Canchas</p>
+              <p class="text-xs text-ladrillo font-semibold uppercase tracking-wider">Mantenimiento de Superficies Deportivas</p>
+            </div>
+          </div>
+          <p class="text-sm text-white/75 leading-relaxed">
+            Especialistas en el cuidado integral de canchas de tenis, pádel y fútbol para barrios cerrados, countries y clubes de campo.
+          </p>
+        </div>
+
+        <!-- Services List -->
+        <div>
+          <h4 class="font-heading font-bold text-sm uppercase tracking-wider text-ladrillo mb-3">Superficies que Atendemos</h4>
+          <ul class="space-y-2 text-sm text-white/80">
+            <li><a href="#servicios" class="hover:text-white transition-colors">• Tenis — Polvo de Ladrillo (Diario 8:00 AM)</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">• Pádel — Césped Sintético y Sílice (Jueves)</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">• Fútbol — Césped Sintético y Caucho (Mensual)</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact -->
+        <div>
+          <h4 class="font-heading font-bold text-sm uppercase tracking-wider text-ladrillo mb-3">Contacto Directo</h4>
+          <ul class="space-y-2 text-sm text-white/80">
+            <li>Responsable: <strong class="text-white">Tomás Domínguez</strong></li>
+            <li>
+              WhatsApp / Teléfono:
+              <a
+                href="https://wa.me/5491171148366?text=Hola%20Tom%C3%A1s%2C%20vi%20la%20web%20de%20MR%20Canchas%20y%20me%20gustar%C3%ADa%20coordinar%20una%20cotizaci%C3%B3n%20para%20nuestro%20barrio."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-white font-semibold hover:text-ladrillo transition-colors"
+              >
+                +54 9 11 7114-8366
+              </a>
+            </li>
+            <li>Documentación y Monotributo al día para barrios cerrados.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/60">
+        <p>&copy; <span id="current-year">2026</span> MR Canchas — Tomás Domínguez. Todos los derechos reservados.</p>
+        <p>Mantenimiento de Superficies Deportivas en Barrios Cerrados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       BOTÓN FLOTANTE STICKY DE WHATSAPP (CONVERSIÓN EN TODO EL SCROLL)
+  ==================================================================== -->
+  <a
+    href="https://wa.me/5491171148366?text=Hola%20Tom%C3%A1s%2C%20vi%20la%20web%20de%20MR%20Canchas%20y%20me%20gustar%C3%ADa%20coordinar%20una%20cotizaci%C3%B3n%20para%20nuestro%20barrio."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Consultar Presupuesto por WhatsApp con Tomás Domínguez"
+    class="wa-pulse fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 inline-flex items-center gap-2.5 bg-[#25D366] hover:bg-[#1EBE5D] active:scale-95 text-white font-heading font-bold text-sm sm:text-base pl-3.5 pr-4 sm:pl-4 sm:pr-5 py-3 sm:py-3.5 rounded-full shadow-cta border-2 border-white transition-all"
+  >
+    <span class="relative flex items-center justify-center">
+      <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.25.7-1.44 1.34-1.99 1.42-.51.07-1.15.1-1.85-.12-.43-.14-.98-.32-1.69-.63-2.98-1.29-4.92-4.3-5.07-4.5-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2.18 1.04-2.48.27-.3.59-.38.79-.38.2 0 .4.01.57.01.18.01.43-.07.67.51.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.17-.31.38-.45.51-.15.15-.3.31-.13.61.17.3.77 1.27 1.65 2.06 1.14 1.02 2.1 1.33 2.4 1.48.3.15.48.12.66-.07.18-.2.75-.88.95-1.18.2-.3.4-.25.67-.15.27.1 1.74.82 2.04.97.3.15.5.22.57.35.07.13.07.73-.18 1.43z"/>
+      </svg>
+    </span>
+    <span class="tracking-tight whitespace-nowrap">Consultar Presupuesto</span>
+  </a>
+
+  <!-- ===================================================================
+       VANILLA JS: MOBILE DRAWER & GALLERY CATEGORY FILTERING
+  ==================================================================== -->
+  <script>
+    (function () {
+      // Dynamic footer year
+      const yearEl = document.getElementById('current-year');
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+
+      // Mobile Navigation Drawer
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const iconOpen = document.getElementById('icon-open');
+      const iconClose = document.getElementById('icon-close');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+      function toggleMobileMenu(forceClose) {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        const shouldOpen = forceClose === true ? false : isHidden;
+
+        mobileMenu.classList.toggle('hidden', !shouldOpen);
+        iconOpen.classList.toggle('hidden', shouldOpen);
+        iconClose.classList.toggle('hidden', !shouldOpen);
+        menuBtn.setAttribute('aria-expanded', String(shouldOpen));
+      }
+
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', function () {
+          toggleMobileMenu();
+        });
+
+        mobileLinks.forEach(function (link) {
+          link.addEventListener('click', function () {
+            toggleMobileMenu(true);
+          });
+        });
+      }
+
+      // Interactive Gallery Filtering
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const galleryCards = document.querySelectorAll('.gallery-card');
+
+      filterButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const selected = btn.getAttribute('data-filter');
+
+          filterButtons.forEach(function (b) {
+            b.classList.remove('active', 'bg-grafito', 'text-white');
+            b.classList.add('bg-white', 'text-grafito', 'border', 'border-gray-200');
+          });
+
+          btn.classList.add('active', 'bg-grafito', 'text-white');
+          btn.classList.remove('bg-white', 'text-grafito', 'border', 'border-gray-200');
+
+          galleryCards.forEach(function (card) {
+            const category = card.getAttribute('data-category');
+            if (selected === 'all' || category === selected) {
+              card.classList.remove('hidden-item');
+            } else {
+              card.classList.add('hidden-item');
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
